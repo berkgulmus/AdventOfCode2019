@@ -68,31 +68,7 @@ for i in range(len(Data_B)):
 minimumValue = 999999999
 for i in range(len(Points_A)-1):
     for k in range(len(Points_B)-1):
-        """Intersection_X = False
-        if( Points_A[i][0] <=  Points_B[k][0] and Points_A[i+1][0] >= Points_B[k][0]):
-            Intersection_X = True
-        elif(Points_A[i][0] >=  Points_B[k][0] and Points_A[i+1][0] <= Points_B[k][0]):
-            Intersection_X = True
-        elif (Points_A[i][0] <= Points_B[k+1][0] and Points_A[i + 1][0] >= Points_B[k+1][0]):
-            Intersection_X = True
-
-        elif (Points_A[i][0] >= Points_B[k+1][0] and Points_A[i + 1][0] <= Points_B[k+1][0]):
-            Intersection_X = True
-
-        Intersection_Y = False
-        if (Points_A[i][1] <= Points_B[k][1] and Points_A[i + 1][1] >= Points_B[k][1]):
-            Intersection_Y = True
-        elif (Points_A[i][1] >= Points_B[k][1] and Points_A[i + 1][1] <= Points_B[k][1]):
-            Intersection_Y = True
-        elif (Points_A[i][1] <= Points_B[k + 1][1] and Points_A[i + 1][1] >= Points_B[k + 1][1]):
-            Intersection_Y = True
-        elif (Points_A[i][1] >= Points_B[k + 1][1] and Points_A[i + 1][1] <= Points_B[k + 1][1]):
-            Intersection_Y = True
-
-        if(Intersection_X == True  and Intersection_Y == True):
-            print("found intersection   " + str(Points_A[i]) + str(Points_A[i+1 ])+ str(Points_B[k]) + str(Points_B[k+1]))
         
-        """
         resultX, resultY = get_line_intersection(Points_A[i][0],Points_A[i][1],Points_A[i+1][0],Points_A[i+1][1],Points_B[k][0],Points_B[k][1],Points_B[k+1][0],Points_B[k+1][1])
 
         if (resultX != 0 and resultY !=0):
